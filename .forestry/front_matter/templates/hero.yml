@@ -1,0 +1,37 @@
+---
+label: Hero
+hide_body: false
+is_partial: true
+fields:
+- type: boolean
+  name: add_sidekick_
+  label: Add SideKick?
+  description: 'If "True"/"On" then the sidekick will be added to the hero '
+- type: file
+  name: landscape_large
+  label: Landscape Large
+  description: This is the biggest image to be used in the hero.
+  config:
+    maxSize: '1.5'
+- type: file
+  name: landscape_small
+  label: Landscape Small
+  description: Second largest hero image
+  config:
+    maxSize: '1.5'
+- type: file
+  name: portrait_large
+  label: Portrait Large
+  description: Second smallest hero image
+  config:
+    maxSize: '1'
+- type: file
+  name: portrait_small
+  label: Portrait Small
+  description: Smallest hero image
+  config:
+    maxSize: '1'
+- type: include
+  template: feature-list
+  label: Sidekick Featurelist
+  name: sidekick_featurelist
