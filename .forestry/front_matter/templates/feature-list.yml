@@ -1,7 +1,8 @@
 ---
 label: Feature List
 hide_body: false
-is_partial: false
+is_partial: true
+display_field: list_item
 fields:
 - type: list
   label: List Item
