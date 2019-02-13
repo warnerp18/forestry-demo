@@ -43,3 +43,5 @@ fields:
   type: text
   hidden: true
   default: post
+pages:
+- _posts/Home Page.md
