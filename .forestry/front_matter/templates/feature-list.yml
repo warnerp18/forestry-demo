@@ -1,0 +1,12 @@
+---
+label: Feature List
+hide_body: false
+is_partial: false
+fields:
+- type: list
+  label: List Item
+  name: list_item
+  config:
+    use_select: false
+    source:
+      type: documents
