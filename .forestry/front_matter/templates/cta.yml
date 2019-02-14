@@ -28,3 +28,6 @@ fields:
   - type: boolean
     name: inverse
     label: Inverse
+  - type: boolean
+    name: cta_combo
+    label: CTA Combo
