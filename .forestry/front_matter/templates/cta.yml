@@ -50,3 +50,12 @@ fields:
   - type: text
     name: cta_label
     label: CTA Label
+  - type: boolean
+    name: cta_primary
+    label: CTA Primary
+  - type: boolean
+    label: CTA Secondary
+    name: cta_secondary
+  - type: boolean
+    label: CTA Inverse
+    name: cta_inverse
