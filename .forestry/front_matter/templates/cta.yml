@@ -31,3 +31,20 @@ fields:
   - type: boolean
     name: cta_combo
     label: CTA Combo
+- type: field_group
+  name: cta_combo_fields
+  label: CTA Combo Fields
+  description: Use these fields if using a CTA Combo
+  fields:
+  - type: text
+    name: primary_cta_link
+    label: Primary CTA Link
+  - type: text
+    name: primary_cta_label
+    label: Primary CTA Label
+  - type: text
+    name: secondary_cta_link
+    label: Secondary CTA Link
+  - type: text
+    name: secondary_cta_label
+    label: Secondary CTA Label
