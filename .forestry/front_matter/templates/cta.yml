@@ -8,6 +8,9 @@ fields:
   label: CTA Combo Fields
   description: Use these fields if using a CTA Combo
   fields:
+  - type: boolean
+    name: use_cta_combo
+    label: Use CTA Combo
   - type: text
     name: primary_cta_link
     label: Primary CTA Link
