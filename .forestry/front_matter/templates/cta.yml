@@ -53,6 +53,7 @@ fields:
   - type: boolean
     name: cta_primary
     label: CTA Primary
+    default: false
   - type: boolean
     label: CTA Secondary
     name: cta_secondary
