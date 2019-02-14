@@ -11,3 +11,20 @@ fields:
   name: cta_label
   label: CTA label
   description: Text you want to appear on button/link
+- type: field_group
+  name: cta_type
+  label: CTA Type
+  description: CTA Types
+  fields:
+  - type: boolean
+    label: Primary CTA
+    name: primary_cta
+  - type: boolean
+    name: secondary_cta
+    label: Secondary CTA
+  - type: boolean
+    name: text_link
+    label: Text link
+  - type: boolean
+    name: inverse
+    label: Inverse
