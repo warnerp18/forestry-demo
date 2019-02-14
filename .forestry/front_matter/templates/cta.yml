@@ -40,3 +40,13 @@ fields:
   - type: text
     name: secondary_cta_label
     label: Secondary CTA Label
+- type: field_group
+  label: Single CTA
+  name: single_cta
+  fields:
+  - type: text
+    name: cta_link
+    label: CTA Link
+  - type: text
+    name: cta_label
+    label: CTA Label
