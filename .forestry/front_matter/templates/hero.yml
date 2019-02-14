@@ -35,3 +35,7 @@ fields:
   template: feature-list
   label: Sidekick Featurelist
   name: sidekick_featurelist
+- type: include
+  name: cta
+  label: CTA
+  template: cta
