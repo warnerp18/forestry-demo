@@ -32,10 +32,10 @@ fields:
   config:
     maxSize: '1'
 - type: include
-  template: feature-list
-  label: Sidekick Featurelist
-  name: sidekick_featurelist
-- type: include
   name: cta
   label: CTA
   template: cta
+- type: include
+  template: feature-list
+  label: Sidekick Featurelist
+  name: sidekick_featurelist
