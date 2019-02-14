@@ -3,14 +3,6 @@ label: CTA
 hide_body: false
 is_partial: false
 fields:
-- type: text
-  name: link_url
-  label: Link URL
-  description: Add the relative path to page
-- type: text
-  name: cta_label
-  label: CTA label
-  description: Text you want to appear on button/link
 - type: field_group
   name: cta_type
   label: CTA Type
