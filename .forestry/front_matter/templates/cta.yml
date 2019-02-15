@@ -41,5 +41,8 @@ fields:
     label: CTA Secondary
     name: cta_secondary
   - type: boolean
+    name: cta_minor
+    label: CTA Minor
+  - type: boolean
     label: CTA Inverse
     name: cta_inverse
