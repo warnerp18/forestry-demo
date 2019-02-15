@@ -1,0 +1,15 @@
+{% if page.use_cta_combo == true %}
+<section class="cta-combo">
+  <a class="cta-primary cta-combo__primary" href="{{page.link_url}}">{{page.cta_label}}</a>
+  <span class="cta-combo__secondary-wrap">or<a class="cta-link cta-combo__secondary" href="#">Apply now</a>
+  </span>
+</section>
+
+{% else %}
+
+<a class="
+  {% if page.single_cta.cta_primary%}cta-primary {% elsif page.single_cta.cta_secondary %}cta-secondary{% elsif page.single_cta.cta_text_link %}cta-link{% endif %}{%if page.single_cta.cta_inverse%}--inverse{% endif %}
+"
+href="{{page.single_cta.cta_link}}">
+  {{page.single_cta.cta_label}}</a>
+{% endif %}

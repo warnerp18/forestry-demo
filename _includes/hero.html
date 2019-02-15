@@ -1,10 +1,7 @@
 {% assign heading-bar-class = 'text-block__heading-bar--primary section-heading section-heading--large' %}
 {% if page.hero_type == 'brand_hero'%}
-  heading-bar-class= 'brand-heading brand-heading--hero text-block__heading-bar--brand'
+  {% assign heading-bar-class= 'brand-heading brand-heading--hero text-block__heading-bar--brand' %}
 {% endif %}
-
-TEST
-{{ page.hero_type | inspect }}
 
 <section class="hero">
   <div class="hero__inner">
@@ -13,11 +10,7 @@ TEST
         <h1 class="{{heading-bar-class}} u-color-white">{{page.hero_section_heading}}</h1>
         <p class="text-block__lead-paragraph">{{page.hero_paragraph}}</p>
       </section>
-      <section class="cta-combo">
-        <a class="cta-primary cta-combo__primary" href="#">Kostenloses Anlegerkonto eröffnen</a>
-        <span class="cta-combo__secondary-wrap">or<a class="cta-link cta-combo__secondary" href="#">Apply now</a>
-        </span>
-      </section>
+      {% include cta.html %}
     </div>
   </div>
 </section>
