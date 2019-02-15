@@ -39,3 +39,6 @@ fields:
   template: feature-list
   label: Sidekick Featurelist
   name: sidekick_featurelist
+- type: image_gallery
+  name: test_hero_images
+  label: Test Hero Images
