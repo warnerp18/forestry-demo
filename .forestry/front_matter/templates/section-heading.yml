@@ -11,5 +11,5 @@ fields:
   config:
     source:
       type: custom
-      options: [ large, medium, small ]
+      options: [ 'large', 'medium', 'small' ]
   label: Heading Size
