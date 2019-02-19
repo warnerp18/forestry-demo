@@ -19,6 +19,7 @@ fields:
     - Large
     - Medium
     - Small
+    required: true
   label: Heading Size
 - type: select
   config:
@@ -31,5 +32,6 @@ fields:
     - h4
     - h5
     - h6
+    required: true
   label: Heading Type
   name: heading_type
