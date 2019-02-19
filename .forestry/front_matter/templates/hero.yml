@@ -11,10 +11,11 @@ fields:
   name: hero_images
   label: Hero Images
   description: Upload Hero Images with proper name formatting
-- type: include
+- type: blocks
   name: cta
   label: CTA
-  template: cta
+  template_types:
+  - cta
 - type: include
   template: feature-list
   label: Sidekick Featurelist
