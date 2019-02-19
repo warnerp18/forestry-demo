@@ -7,6 +7,10 @@ fields:
   name: section_heading
   label: Section Heading
   template: section-heading
+- type: include
+  name: text_block_lead_paragraph
+  label: Text Block Lead Paragraph
+  template: lead-paragrpah
 - type: textarea
   label: Text Block Paragraph
   name: text_block_paragraph
