@@ -1,0 +1,14 @@
+---
+label: Section Heading
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: section_heading
+  label: Section Heading
+- type: select
+  name: heading_size
+  config:
+    source:
+      type: documents
+  label: Heading Size
