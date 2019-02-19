@@ -10,6 +10,13 @@ fields:
   name: heading_size
   config:
     source:
-      type: custom
-      options: [ 'large', 'medium', 'small' ]
+      type: simple
+      options:
+      - large
+      - medium
+      - small
+    options:
+    - Large
+    - Medium
+    - Small
   label: Heading Size
