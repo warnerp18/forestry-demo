@@ -15,6 +15,9 @@ fields:
   name: cta_2
   label: CTA 2
   template: cta
+- type: blocks
+  name: cta_block_test
+  label: CTA BLOCK TEST
 pages:
 - _posts/2019-02-19-Home Page.md
 - _posts/2019-02-19-Home Page.md
