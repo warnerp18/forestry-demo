@@ -1,0 +1,12 @@
+---
+label: Lead Paragrpah
+hide_body: false
+is_partial: false
+fields:
+- type: textarea
+  name: lead_paragraph
+  label: Lead Paragraph
+  config:
+    wysiwyg: false
+    schema:
+      format: markdown
