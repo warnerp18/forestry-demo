@@ -11,13 +11,9 @@ fields:
   name: text_block
   label: Text Block
   template: text-block
-- type: include
-  name: cta_2
-  label: CTA 2
-  template: cta
 - type: blocks
-  name: cta_block_test
-  label: CTA BLOCK TEST
+  name: cta
+  label: CTA
   template_types:
   - cta
 pages:
