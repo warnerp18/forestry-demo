@@ -11,6 +11,10 @@ fields:
   name: text_block
   label: Text Block
   template: text-block
+- type: include
+  name: cta_2
+  label: CTA 2
+  template: cta
 pages:
 - _posts/2019-02-19-Home Page.md
 - _posts/2019-02-19-Home Page.md
