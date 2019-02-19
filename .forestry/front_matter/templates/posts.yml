@@ -18,6 +18,8 @@ fields:
 - type: blocks
   name: cta_block_test
   label: CTA BLOCK TEST
+  template_types:
+  - cta
 pages:
 - _posts/2019-02-19-Home Page.md
 - _posts/2019-02-19-Home Page.md
