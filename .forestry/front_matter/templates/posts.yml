@@ -7,3 +7,5 @@ fields:
   name: posts
   label: Posts
   template: hero
+pages:
+- _posts/Home Page.md
