@@ -1,7 +1,7 @@
 ---
 label: CTA
 hide_body: false
-is_partial: false
+is_partial: true
 fields:
 - type: boolean
   name: use_cta_combo
