@@ -10,5 +10,6 @@ fields:
   name: heading_size
   config:
     source:
-      type: documents
+      type: custom
+      options: [ large, medium, small ]
   label: Heading Size

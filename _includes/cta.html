@@ -1,7 +1,8 @@
-{% if page.use_cta_combo == true %}
+{{ page | inspect }}
+{% if page.use_cta_combo %}
 <section class="cta-combo">
-  <a class="cta-primary cta-combo__primary" href="{{page.link_url}}">{{page.cta_label}}</a>
-  <span class="cta-combo__secondary-wrap">or<a class="cta-link cta-combo__secondary" href="#">Apply now</a>
+  <a class="cta-primary cta-combo__primary" href="{{page.cta_combo_fields.primary_cta_link}}">{{page.cta_combo_fields.primary_cta_label}}</a>
+  <span class="cta-combo__secondary-wrap">or<a class="cta-link cta-combo__secondary" href="{{page.cta_combo_fields.secondary_cta_link}}">{{page.cta_combo_fields.secondary_cta_label}}</a>
   </span>
 </section>
 
