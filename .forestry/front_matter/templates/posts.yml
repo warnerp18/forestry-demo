@@ -7,5 +7,9 @@ fields:
   name: posts
   label: Posts
   template: hero
+- type: include
+  name: text_block
+  label: Text Block
+  template: text-block
 pages:
 - _posts/2019-02-19-Home Page.md
