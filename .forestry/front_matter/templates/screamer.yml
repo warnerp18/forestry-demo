@@ -4,10 +4,9 @@ hide_body: false
 is_partial: true
 fields:
 - type: text
-  name: left_side_content
-  label: Left Side Content
-  config:
-    required: true
+  name: text_box
+  label: Text box
+  description: Description
 - type: blocks
   name: screamer_block
   label: Screamer Block
