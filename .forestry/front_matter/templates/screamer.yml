@@ -3,6 +3,10 @@ label: Screamer
 hide_body: false
 is_partial: true
 fields:
+- type: text
+  name: text_box
+  label: Text box
+  description: Description
 - type: blocks
   name: screamer_block
   label: Screamer Block
@@ -11,7 +15,3 @@ fields:
   template_types:
   - screamer-stat-label
   - cta
-- type: text
-  name: text_box
-  label: Text box
-  description: Description
