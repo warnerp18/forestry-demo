@@ -3,6 +3,12 @@ label: Screamer
 hide_body: false
 is_partial: true
 fields:
+- type: blocks
+  name: screamer_theme
+  label: Screamer Theme
+  description: Add a background theme to this screamer
+  template_types:
+  - background-theme
 - type: text
   name: text_box
   label: Text box
