@@ -8,6 +8,7 @@ fields:
   label: Screamer Left Side Content
   config:
     required: true
+  description: TEST
 - type: blocks
   name: screamer_block
   label: Screamer Block
