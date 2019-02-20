@@ -1,0 +1,20 @@
+---
+label: Background Theme
+hide_body: false
+is_partial: true
+fields:
+- type: select
+  name: theme_options
+  config:
+    source:
+      type: simple
+    options:
+    - default
+    - contrast
+    - accent
+    - action
+    - brand
+    - brand-light
+    - impact
+  label: Theme Options
+  description: Pick a theme that will be the background to this component
