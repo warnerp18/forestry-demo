@@ -17,7 +17,7 @@ fields:
   template_types:
   - section-heading
   config:
-    max: '1'
+    max: '2'
 - type: blocks
   name: hero_lead_paragraph
   label: Hero Lead Paragraph
