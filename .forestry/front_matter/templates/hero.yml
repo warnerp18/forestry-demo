@@ -18,13 +18,10 @@ fields:
   - section-heading
   config:
     max: '1'
-- type: blocks
-  name: lead_paragraph
-  label: Lead Paragraph
-  config:
-    max: '1'
-  template_types:
-  - lead-paragrpah
+- type: include
+  name: lead_paragraph_
+  label: Lead Paragraph`
+  template: lead-paragrpah
 - type: blocks
   name: cta
   label: CTA
