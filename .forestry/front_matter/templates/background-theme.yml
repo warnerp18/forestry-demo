@@ -17,4 +17,5 @@ fields:
     - brand-light
     - impact
   label: Theme Options
-  description: Pick a theme that will be the background to this component
+  description: 'Pick a theme that will be the background to this component. See Radius
+    docs for more info: http://radius.fundingcircle.tech/M2DM/developer/utility-classes/themes/ '
