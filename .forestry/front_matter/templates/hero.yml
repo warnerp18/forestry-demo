@@ -23,3 +23,5 @@ fields:
 - type: blocks
   name: section_heading
   label: Section Heading
+  template_types:
+  - section-heading
