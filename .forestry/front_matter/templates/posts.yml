@@ -16,11 +16,6 @@ fields:
   label: CTA
   template_types:
   - cta
-- type: blocks
-  name: screamer
-  label: Screamer
-  template_types:
-  - screamer
 pages:
 - _posts/2019-02-19-Home Page.md
 - _posts/2019-02-20-Randome.md
