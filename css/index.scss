@@ -1,0 +1,54 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+$radius-config-font-path: "/css/fonts";
+@import '../node_modules/radius/dist/m2dm/sass/style.scss';
+
+$font-family-primary: get-config(font-family-primary);
+$font-family-secondary: get-config(font-family-default);
+
+
+@include radius-component-accordion;
+@include radius-component-brand-heading;
+@include radius-component-case-study;
+@include radius-component-cta;
+@include radius-component-cta-combo;
+@include radius-component-control-button;
+@include radius-component-divider;
+@include radius-component-dropdown;
+@include radius-component-feature-list;
+@include radius-component-footer;
+@include radius-component-form-element;
+@include radius-component-form-field-status;
+@include radius-component-form-input;
+@include radius-component-form-label;
+@include radius-component-form-select;
+@include radius-component-header;
+@include radius-component-header-overlay;
+@include radius-component-hero;
+@include radius-component-hero-sidekick;
+@include radius-component-label;
+@include radius-component-lead-paragraph;
+@include radius-component-meet-the-team;
+@include radius-component-modal;
+@include radius-component-page-closer;
+@include radius-component-paragraph-heading;
+@include radius-component-process-diagram;
+@include radius-component-profile;
+@include radius-component-pull-column;
+@include radius-component-quote;
+@include radius-component-screamer;
+@include radius-component-section-heading;
+@include radius-component-stat;
+@include radius-component-tabs;
+@include radius-component-text-block;
+@include radius-component-trust-bar;
+@include radius-component-trust-block;
+@include radius-component-trustpilot;
+@include radius-component-video-block;
+@include radius-component-quote;
+
+
+@import "hero"

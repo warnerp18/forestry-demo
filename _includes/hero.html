@@ -4,7 +4,7 @@
 {% endif %}
 
 
-<section class="hero {% if page.add_sidekick_ %}hero--with-sidekick{% endif %}">
+<section class="hero hero--ace {% if page.add_sidekick_ %}hero--with-sidekick{% endif %}">
   <div class="hero__inner">
     <div class="hero__content u-color-white">
       <section class="text-block text-block--large u-mb-small">
@@ -17,12 +17,14 @@
 </section>
 
 {% if page.add_sidekick_ %}
-<section class="hero-sidekick">
-  <ul class="feature-list">
-    {% for list_item in page.list_item %}
-      <li class="feature-list__item">{{ list_item }}</li>
-    {% endfor %}
-  </ul>
+<section class="hero-sidekick hero-sidekick--no-overlap">
+  <div class="hero-sidekick__content">
+    <ul class="hero-sidekick__column-primary hero-sidekick__content-grid feature-list u-color-white">
+      {% for list_item in page.list_item %}
+        <li class="feature-list__item">{{ list_item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>
 {% endif %}
 

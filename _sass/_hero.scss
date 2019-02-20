@@ -1,0 +1,28 @@
+.hero {
+  $variations: 'ace', 'ace-b', 'aztec', 'besame', 'bob', 'dave', 'electric', 'forth', 'koshland', 'larry', 'night', 'philosophie', 'red-sweater', 'viola', 'winter-lake';
+    background: green;
+  @each $variation in $variations {
+    &--#{$variation} {
+      background: red;
+      @include hero-customisation('/img/hero/#{$variation}');
+    }
+  }
+}
+
+
+.hero-sidekick {
+  @include hero-sidekick-customisation(get-color(purple, contrast), get-color(white));
+}
+
+
+.hero--dmlp {
+  position: relative;
+
+  padding-bottom: 3rem;
+}
+
+
+.industries-hero {
+  padding-top: 4.625rem;
+  padding-bottom: 3rem;
+}

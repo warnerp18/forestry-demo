@@ -1,0 +1,7 @@
+<section class="text-block">
+  {% include section-heading.html %}
+  {% include lead-paragraph.html %}
+  {%- if page.text_block_paragraph -%}
+  <p class="text-block__paragraph">{{page.text_block_paragraph}}</p>
+  {%- endif -%}
+</section>
