@@ -8,8 +8,8 @@
   <div class="hero__inner">
     <div class="hero__content u-color-white">
       <section class="text-block text-block--large u-mb-small">
-        <h1 class="{{heading-bar-class}} u-color-white">{{page.hero_section_heading}}</h1>
-        <p class="text-block__lead-paragraph">{{page.hero_paragraph}}</p>
+        <h1 class="{{heading-bar-class}} u-color-white">{{page.hero_section_heading[0].section_heading | remove: """" }}</h1>
+        <p class="text-block__lead-paragraph">{{page.hero_lead_paragraph[0].lead_paragraph}}</p>
       </section>
       {% include cta.html %}
     </div>

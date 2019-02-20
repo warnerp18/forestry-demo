@@ -19,6 +19,7 @@ collections:
     permalink: "/about/:path/"
   posts:
     output: true
+    permalink: "/posts/:path/"
   projects:
     output: true
     permalink: "/projects/:path/"
@@ -31,3 +32,5 @@ plugins:
   - jekyll-menus
   - jekyll-feed
   - jekyll-archives
+sass:
+  style: compressed
