@@ -1,0 +1,11 @@
+---
+label: Screamer Stat & Label
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  name: stat
+  label: Stat
+- type: text
+  name: label
+  label: Label
