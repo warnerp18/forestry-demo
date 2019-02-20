@@ -1,7 +1,7 @@
 ---
 label: Section Heading
 hide_body: false
-is_partial: false
+is_partial: true
 fields:
 - type: text
   name: section_heading
@@ -21,6 +21,7 @@ fields:
     - Small
     required: true
   label: Heading Size
+  default: Large
 - type: select
   config:
     source:
@@ -35,3 +36,4 @@ fields:
     required: true
   label: Heading Type
   name: heading_type
+  default: h1

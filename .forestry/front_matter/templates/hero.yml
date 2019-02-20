@@ -1,7 +1,7 @@
 ---
 label: Hero
 hide_body: false
-is_partial: false
+is_partial: true
 fields:
 - type: boolean
   name: add_sidekick_
@@ -20,3 +20,8 @@ fields:
   template: feature-list
   label: Sidekick Featurelist
   name: sidekick_featurelist
+- type: blocks
+  name: section_heading
+  label: Section Heading
+  template_types:
+  - section-heading
