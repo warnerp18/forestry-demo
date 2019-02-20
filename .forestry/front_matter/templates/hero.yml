@@ -16,6 +16,8 @@ fields:
   label: Section Heading
   template_types:
   - section-heading
+  config:
+    max: '1'
 - type: blocks
   name: cta
   label: CTA
