@@ -12,8 +12,8 @@ fields:
   label: Text Block
   template: text-block
 - type: blocks
-  name: cta
-  label: CTA
+  name: text_block_cta
+  label: Text Block CTA
   template_types:
   - cta
 - type: blocks
