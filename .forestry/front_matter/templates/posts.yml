@@ -4,8 +4,8 @@ hide_body: true
 is_partial: false
 fields:
 - type: include
-  name: posts
-  label: Posts
+  name: hero_section
+  label: Hero Section
   template: hero
 - type: include
   name: text_block
