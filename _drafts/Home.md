@@ -41,6 +41,7 @@ text_block_cta:
     secondary_cta_link: textblock/secondary/us/apply
     primary_cta_label: Textblock Primary CTA
     secondary_cta_label: Textblock Secondary CTA
+  use_cta_combo: true
 screamer: []
 date: 2019-02-21 10:28:12 -0800
 
