@@ -42,7 +42,17 @@ text_block_cta:
     primary_cta_label: Textblock Primary CTA
     secondary_cta_label: Textblock Secondary CTA
   use_cta_combo: true
-screamer: []
+screamer:
+- template: screamer
+  screamer_theme:
+  - template: background-theme
+    theme_options: contrast
+  text_box: 62,000 businesses have financed their goals by borrowing $8.6 billion
+    through Funding Circle.
+  screamer_block:
+  - template: screamer-stat-label
+    stat: "$8.6 billion"
+    label: Lent to businesses globally
 date: 2019-02-21 10:28:12 -0800
 
 ---
