@@ -26,8 +26,8 @@ fields:
   template_types:
   - lead-paragrpah
 - type: blocks
-  name: cta
-  label: CTA
+  name: hero_cta
+  label: Hero CTA
   template_types:
   - cta
 - type: include
