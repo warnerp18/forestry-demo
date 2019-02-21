@@ -28,4 +28,5 @@ fields:
   template_types:
   - screamer
 pages:
+- _posts/Home.md
 - _posts/2019-02-19-Home Page.md
