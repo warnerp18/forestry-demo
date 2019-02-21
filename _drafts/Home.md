@@ -25,8 +25,22 @@ hero_section:
   - Borrow between $25K — $500K
   - Repay in 6 months — 5 years
   - Repay in 6 months — 5 years
-text_block_section: []
-text_block_cta: []
+text_block_section:
+- template: text-block
+  heading_size: Large
+  heading_type: h2
+  section_heading: We’re here to help you grow
+  lead_paragraph: With an easy online application, a dedicated account manager, and
+    a fast decision, you can stay focused on your business while we focus on your
+    loan. Taking your business to the next level has never been easier.
+  is_text_block_lead_paragraph: true
+text_block_cta:
+- template: cta
+  cta_combo_fields:
+    primary_cta_link: textblock/primary/us/apply
+    secondary_cta_link: textblock/secondary/us/apply
+    primary_cta_label: Textblock Primary CTA
+    secondary_cta_label: Textblock Secondary CTA
 screamer: []
 date: 2019-02-21 10:28:12 -0800
 
