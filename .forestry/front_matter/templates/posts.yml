@@ -7,6 +7,13 @@ fields:
   name: hero_section
   label: Hero Section
   template: hero
+- type: blocks
+  name: hero_section_2
+  label: Hero Section 2
+  config:
+    max: '1'
+  template_types:
+  - hero
 - type: include
   name: text_block
   label: Text Block
