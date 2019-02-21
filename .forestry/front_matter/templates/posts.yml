@@ -10,10 +10,13 @@ fields:
     max: '1'
   template_types:
   - hero
-- type: include
-  name: text_block
-  label: Text Block
-  template: text-block
+- type: blocks
+  name: text_block_section
+  label: Text Block Section
+  config:
+    max: '1'
+  template_types:
+  - text-block
 - type: blocks
   name: text_block_cta
   label: Text Block CTA
