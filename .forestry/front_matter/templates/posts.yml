@@ -21,6 +21,10 @@ fields:
   label: Screamer
   template_types:
   - screamer
+- type: include
+  name: text_block_cta_template
+  label: Text Block CTA Template
+  template: cta
 pages:
 - _posts/2019-02-19-Home Page.md
 - _posts/2019-02-19-Home Page.md
