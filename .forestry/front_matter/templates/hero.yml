@@ -3,6 +3,16 @@ label: Hero
 hide_body: false
 is_partial: true
 fields:
+- type: select
+  name: hero_type
+  config:
+    source:
+      type: simple
+    options:
+    - Brand
+    - Functional
+    - Editorial
+  label: Hero Type
 - type: boolean
   name: add_sidekick_
   label: Add SideKick?
