@@ -44,3 +44,22 @@ fields:
   template: feature-list
   label: Sidekick Featurelist
   name: sidekick_featurelist
+- type: tag_list
+  name: hero_test_tag_field
+  label: Hero Test Tag Field
+  default:
+  - Ace
+  - Ace-b
+  - Aztec
+  - Besame
+  - Bob
+  - Dave
+  - Electric
+  - Forth
+  - Koshland
+  - Larry
+  - Night
+  - Philosophie
+  - Red-sweater
+  - Viola
+  - Winter-lake
