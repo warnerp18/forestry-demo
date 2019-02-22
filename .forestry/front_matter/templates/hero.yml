@@ -47,19 +47,26 @@ fields:
 - type: tag_list
   name: hero_test_tag_field
   label: Hero Test Tag Field
-  default:
-  - Ace
-  - Ace-b
-  - Aztec
-  - Besame
-  - Bob
-  - Dave
-  - Electric
-  - Forth
-  - Koshland
-  - Larry
-  - Night
-  - Philosophie
-  - Red-sweater
-  - Viola
-  - Winter-lake
+  default: []
+- type: select
+  config:
+    source:
+      type: simple
+    options:
+    - ace
+    - ace-b
+    - electric
+    - aztec
+    - besame
+    - bob
+    - dave
+    - forth
+    - koshland
+    - larry
+    - night
+    - philosophie
+    - red-sweater
+    - viola
+    - winter-lake
+  label: Hero Select Image Name
+  name: hero_select_image_name
