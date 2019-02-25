@@ -39,6 +39,7 @@ fields:
   label: Case Study Sizing
   description: Choose the size of case study you want. Half width containers or full
     width containers
+  default: large
 - type: select
   name: half_case_study_image_selection
   config:
