@@ -27,6 +27,13 @@ fields:
   label: Screamer
   template_types:
   - screamer
+- type: blocks
+  name: case_study
+  label: Case Study
+  config:
+    max: '1'
+  template_types:
+  - case-study
 pages:
 - _posts/2019-02-21-Home.md
 - _posts/2019-02-19-Home Page.md
