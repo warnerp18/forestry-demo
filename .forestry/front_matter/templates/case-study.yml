@@ -1,0 +1,74 @@
+---
+label: Case Study
+hide_body: false
+is_partial: true
+fields:
+- type: select
+  name: vertical_alignment
+  config:
+    source:
+      type: simple
+    options:
+    - middle
+    - bottom
+    required: true
+  label: Vertical Alignment
+  description: Choose where you want the quote to be aligned vertically
+  default: middle
+- type: select
+  name: horizontal_alignment
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - left
+    - right
+  label: Horizontal Alignment
+  description: Choose where you want the quote to align on the X-axis
+  default: left
+- type: select
+  name: case_study_sizing
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - large
+    - small
+  label: Case Study Sizing
+  description: Choose the size of case study you want. Half width containers or full
+    width containers
+- type: select
+  name: half_case_study_image_selection
+  config:
+    source:
+      type: simple
+    options:
+    - ace
+    - philosophie
+    - viola
+  label: Half Case Study Image Selection
+  description: If half size case study toggle is chosen choose one of these images
+- type: select
+  name: case_study_image_options
+  config:
+    source:
+      type: simple
+    required: false
+    options:
+    - aztec
+    - celina
+    - celina-b
+    - celina-c
+    - electric
+    - hair-colour-concepts
+    - kate
+    - koshland
+    - koshland-b
+    - philosophie
+    - simplified-loans
+    - sole-bikes
+    - willie
+  label: Full Case Study Image Options
+  description: Choose one name to add image to case study
