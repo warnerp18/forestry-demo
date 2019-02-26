@@ -13,8 +13,9 @@
 {{case-study-quote.quote_author}}
 {%- endcapture -%}
 
-{{ case-study-quote | inspect }}
-<div class="case-study case-study--{{case-study.case_study_sizing}} case-study--{{case-study.vertical_alignment}} case-study--{{case-study.horizontal_alignment}} case-study--{{case-study.case_study_image_options}}">
+{{ case-study | inspect }}
+
+<div class="case-study case-study--{{case-study.case_study_sizing}} case-study--{{case-study.vertical_alignment}} case-study--{{case-study.horizontal_alignment}} case-study--{{case-study.case_study_image_options}}{% if case-study.case_study_sizing == "large"%}-full{% else %}-half{% endif %}">
   <div class="case-study__image"></div>
   <div class="case-study__inner">
     <div class="case-study__content">

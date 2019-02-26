@@ -1,7 +1,7 @@
 
 // Full or large Case Study
 .case-study--aztec-full {
-   @include case-study-customisation("", #A8CEDE, get-color(white));
+   @include case-study-customisation("/img/case-study/full/aztec/", #A8CEDE, get-color(white));
 
 
    &-dark-blue {
