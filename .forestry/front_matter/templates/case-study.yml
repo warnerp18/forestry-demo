@@ -73,3 +73,12 @@ fields:
     - willie
   label: Full Case Study Image Options
   description: Choose one name to add image to case study
+- type: blocks
+  name: case_study_quote
+  label: Case Study Quote
+  description: Add the quote associated with this case study
+  config:
+    min: '1'
+    max: '1'
+  template_types:
+  - quote
