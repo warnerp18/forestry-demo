@@ -6,15 +6,11 @@ fields:
 - type: blocks
   name: hero_section
   label: Hero Section
-  config:
-    max: '1'
   template_types:
   - hero
 - type: blocks
   name: text_block_section
   label: Text Block Section
-  config:
-    max: '1'
   template_types:
   - text-block
 - type: blocks
@@ -30,8 +26,6 @@ fields:
 - type: blocks
   name: case_study
   label: Case Study
-  config:
-    max: '1'
   template_types:
   - case-study
 - type: blocks
