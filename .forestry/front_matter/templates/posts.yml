@@ -34,3 +34,5 @@ fields:
     max: '1'
   template_types:
   - case-study
+pages:
+- _posts/Home Page V2.md
