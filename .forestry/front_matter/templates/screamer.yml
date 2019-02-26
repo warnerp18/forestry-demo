@@ -16,8 +16,6 @@ fields:
 - type: blocks
   name: screamer_block
   label: Screamer Block
-  config:
-    max: '1'
   template_types:
   - screamer-stat-label
   - cta
