@@ -8,6 +8,7 @@ fields:
   config:
     source:
       type: simple
+    required: true
     options:
     - default
     - trustpilot-author
@@ -33,7 +34,10 @@ fields:
   label: Quote Content
   description: Add the actual quote here
   config:
+    required: true
 - type: text
   name: quote_author
   label: Quote Author
   description: 'Add the author here. Ex: Sam, April 2016'
+  config:
+    required: true

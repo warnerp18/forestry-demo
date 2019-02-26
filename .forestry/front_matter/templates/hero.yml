@@ -24,11 +24,15 @@ fields:
 - type: blocks
   name: hero_section_heading
   label: Hero Section Heading
+  config:
+    max: '2'
   template_types:
   - section-heading
 - type: blocks
   name: hero_lead_paragraph
   label: Hero Lead Paragraph
+  config:
+    max: '2'
   template_types:
   - lead-paragrpah
 - type: blocks

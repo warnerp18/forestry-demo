@@ -11,6 +11,7 @@ fields:
     options:
     - middle
     - bottom
+    required: true
   label: Vertical Alignment
   description: Choose where you want the quote to be aligned vertically
   default: middle
@@ -19,6 +20,7 @@ fields:
   config:
     source:
       type: simple
+    required: true
     options:
     - left
     - right
@@ -30,6 +32,7 @@ fields:
   config:
     source:
       type: simple
+    required: true
     options:
     - large
     - small
@@ -53,6 +56,7 @@ fields:
   config:
     source:
       type: simple
+    required: false
     options:
     - aztec
     - celina
@@ -73,5 +77,8 @@ fields:
   name: case_study_quote
   label: Case Study Quote
   description: Add the quote associated with this case study
+  config:
+    min: '1'
+    max: '1'
   template_types:
   - quote
