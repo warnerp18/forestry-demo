@@ -19,7 +19,6 @@ fields:
     - Large
     - Medium
     - Small
-    required: true
   label: Heading Size
   default: Large
 - type: select
@@ -33,7 +32,6 @@ fields:
     - h4
     - h5
     - h6
-    required: true
   label: Heading Type
   name: heading_type
   default: h1
