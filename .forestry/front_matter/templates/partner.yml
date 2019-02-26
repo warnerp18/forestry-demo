@@ -2,4 +2,7 @@
 label: Partner
 hide_body: true
 is_partial: false
-fields: []
+fields:
+- type: text
+  name: partner_page_title
+  label: Partner Page Title
