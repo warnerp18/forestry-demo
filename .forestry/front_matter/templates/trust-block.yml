@@ -26,7 +26,7 @@ fields:
     label: Full Width Trust Block Content
 - type: field_group
   name: grid_user_case
-  label: 1:1 Grid User Case
+  label: Grid User Case
   description: http://radius.fundingcircle.tech/M2DM/components/trust/trust-block/
   fields:
   - type: textarea
