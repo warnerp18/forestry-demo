@@ -3,18 +3,6 @@ label: Quote
 hide_body: false
 is_partial: true
 fields:
-- type: text
-  name: quote_content
-  label: Quote Content
-  description: Add the actual quote here
-  config:
-    required: true
-- type: text
-  name: quote_author
-  label: Quote Author
-  description: 'Add the author here. Ex: Sam, April 2016'
-  config:
-    required: true
 - type: select
   name: quote_modifiers
   config:
@@ -29,3 +17,27 @@ fields:
   label: Quote Modifiers
   description: 'Choose a modifier for your use case. See Radius for expalanation:
     http://radius.fundingcircle.tech/M2DM/components/quote/'
+  default: default
+- type: select
+  name: quote_and_author_text_color
+  config:
+    source:
+      type: simple
+    options:
+    - default
+    - white
+  label: Quote & Author Text Color
+  description: Choose either default (black) or white text color for both the quote
+    and author name.
+- type: text
+  name: quote_content
+  label: Quote Content
+  description: Add the actual quote here
+  config:
+    required: true
+- type: text
+  name: quote_author
+  label: Quote Author
+  description: 'Add the author here. Ex: Sam, April 2016'
+  config:
+    required: true
