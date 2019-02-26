@@ -27,7 +27,7 @@ sections:
   path: _data/information.yml
   label: Contact Information
 upload_dir: uploads
-public_path: "/img"
+public_path: "/uploads"
 front_matter_path: "/img"
 use_front_matter_path: true
 file_template: ":filename:"
