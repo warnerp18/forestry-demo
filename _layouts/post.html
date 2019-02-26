@@ -2,15 +2,39 @@
 layout: default
 ---
 {% comment %}
-	This layout is used by the documents in the _posts/ collection
+This layout is used by the documents in the _posts/ collection
 {% endcomment %}
+
+{% assign textBlockCta = page.text_block_cta[0] %}
+
+{%- capture textBlockPrimaryLink -%}
+{{textBlockCta.cta_combo_fields.primary_cta_link}}
+{%- endcapture -%}
+
+{%- capture textBlockPrimaryLabel -%}
+{{textBlockCta.cta_combo_fields.primary_cta_label}}
+{%- endcapture -%}
+
+{%- capture textBlockSecondaryLabel -%}
+{{textBlockCta.cta_combo_fields.secondary_cta_label}}
+{%- endcapture -%}
+
+{%- capture textBlockSecondaryLink -%}
+{{textBlockCta.cta_combo_fields.secondary_cta_link}}
+{%- endcapture -%}
+
+{%- capture isTextBlockCtaComboField -%}
+{{textBlockCta.use_cta_combo}}
+{%- endcapture -%}
 
 {% include hero.html %}
 
 <section class="text-block--center u-grid-141 u-pv-5x-large u-add-gutters">
   {% include text-block.html %}
-  {% include cta.html %}
+  {% include cta.html is-cta-combo-field=isTextBlockCtaComboField cta-primary-link=textBlockPrimaryLink cta-primary-label=textBlockPrimaryLabel cta-secondary-link=textBlockSecondaryLink cta-secondary-label=textBlockSecondaryLabel %}
 </section>
 
-{{ page | inspect }}
+{% include screamer.html %}
+
+{% include case-study.html %}
 

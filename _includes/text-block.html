@@ -1,7 +1,31 @@
+{% assign textBlock = page.text_block_section[0] %}
+
+{%- capture textBlockHeadingTag -%}
+{{textBlock.heading_type}}
+{%- endcapture -%}
+
+{%- capture textBlockSectionHeading -%}
+{{textBlock.section_heading}}
+{%- endcapture -%}
+
+{%- capture textBlockHeadingSize -%}
+{{textBlock.heading_size}}
+{%- endcapture -%}
+
+{%- capture textBlockLeadParagraph -%}
+{{textBlock.lead_paragraph}}
+{%- endcapture -%}
+
+{%- capture isTextBlockLeadParagraph -%}
+{{textBlock.is_text_block_lead_paragraph}}
+{%- endcapture -%}
+
 <section class="text-block">
-  {% include section-heading.html %}
-  {% include lead-paragraph.html %}
-  {%- if page.text_block_paragraph -%}
-  <p class="text-block__paragraph">{{page.text_block_paragraph}}</p>
+  {% include section-heading.html heading=textBlockSectionHeading tag=textBlockHeadingTag heading-size=textBlockHeadingSize%}
+  {%- if textBlock.lead_paragraph -%}
+  {% include lead-paragraph.html leadParagraph=textBlockLeadParagraph isTextBlockLeadParagraph=isTextBlockLeadParagraph %}
+  {%- endif -%}
+  {%- if textBlock.text_block_paragraph -%}
+  <p class="text-block__paragraph">{{textBlock.text_block_paragraph}}</p>
   {%- endif -%}
 </section>

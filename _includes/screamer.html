@@ -1,0 +1,41 @@
+{% assign screamerBlock = page.screamer[0].screamer_block[0] %}
+
+<section class="screamer u-theme-{{page.screamer[0].screamer_theme[0].theme_options}}">
+  <div class="screamer__inner">
+    <div class="screamer__message">
+      <p class="lead-paragraph">{{page.screamer[0].text_box}}</p>
+    </div>
+    <div class="screamer__hook">
+      {%- if screamerBlock.template == "screamer-stat-label" -%}
+      <div>
+        <span class="stat">{{page.screamer[0].screamer_block[0].stat}}</span>
+        <br>
+        <span class="label">{{page.screamer[0].screamer_block[0].label}}</span>
+      </div>
+      {%- else -%}
+      {%- capture ctaPrimaryLink -%}
+      {{screamerBlock.cta_combo_fields.primary_cta_link}}
+      {%- endcapture -%}
+
+      {%- capture ctaPrimaryLabel -%}
+      {{screamerBlock.cta_combo_fields.primary_cta_label}}
+      {%- endcapture -%}
+
+      {%- capture ctaSecondaryLabel -%}
+      {{screamerBlock.cta_combo_fields.secondary_cta_label}}
+      {%- endcapture -%}
+
+      {%- capture ctaSecondaryLink -%}
+      {{screamerBlock.cta_combo_fields.secondary_cta_link}}
+      {%- endcapture -%}
+
+      {%- capture isCtaComboField -%}
+      {{screamerBlock.template}}
+      {%- endcapture -%}
+
+      {% include cta.html is-cta-combo-field=isCtaComboField cta-primary-link=ctaPrimaryLink cta-primary-label=ctaPrimaryLabel cta-secondary-link=ctaSecondaryLink cta-secondary-label=ctaSecondaryLabel %}
+      {%- endif -%}
+
+    </div>
+  </div>
+</section>

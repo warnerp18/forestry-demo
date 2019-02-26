@@ -1,0 +1,24 @@
+{% assign case-study = page.case_study[0] %}
+{% assign case-study-quote = page.case_study[0].case_study_quote[0] %}
+
+{%- capture quoteModifier -%}
+{{case-study-quote.quote_modifiers}}
+{%- endcapture -%}
+
+{%- capture quoteContent -%}
+{{case-study-quote.quote_content}}
+{%- endcapture -%}
+
+{%- capture quoteAuthor -%}
+{{case-study-quote.quote_author}}
+{%- endcapture -%}
+
+{{ case-study-quote | inspect }}
+<div class="case-study case-study--{{case-study.case_study_sizing}} case-study--{{case-study.vertical_alignment}} case-study--{{case-study.horizontal_alignment}} case-study--{{case-study.case_study_image_options}}">
+  <div class="case-study__image"></div>
+  <div class="case-study__inner">
+    <div class="case-study__content">
+      {% include quote.html quote-modifier=quoteModifier quote-content=quoteContent quote-author=quoteAuthor %}
+    </div>
+  </div>
+</div>

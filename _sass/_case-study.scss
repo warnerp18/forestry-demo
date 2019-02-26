@@ -1,0 +1,99 @@
+
+// Full or large Case Study
+.case-study--aztec-full {
+   @include case-study-customisation("", #A8CEDE, get-color(white));
+
+
+   &-dark-blue {
+     @include case-study-customisation("", #478fb3, get-color(white));
+   }
+}
+
+
+.case-study--celina-full {
+  @include case-study-customisation("", #706382, get-color(grey, 4x-light));
+}
+
+
+.case-study--celina-b-full {
+  @include case-study-customisation("", #524660, get-color(white));
+}
+
+
+.case-study--celina-c-full {
+  @include case-study-customisation("", #706382, get-color(grey, 4x-light));
+
+
+  &-white {
+    @include case-study-customisation("", #706382, get-color(white));
+  }
+
+
+  &-slate {
+    @include case-study-customisation("", #706382, get-color(grey, contrast));
+  }
+}
+
+
+.case-study--electric-full {
+   @include case-study-customisation("", #364c53, get-color(white));
+ }
+
+
+.case-study--hair-colour-full {
+   @include case-study-customisation("", #305066, get-color(white));
+}
+
+
+.case-study--kate-full {
+  @include case-study-customisation("", #DE4145, get-color(white));
+}
+
+
+.case-study--koshland-full {
+  @include case-study-customisation("", #2B84B4, get-color(white));
+
+
+  &-contrast {
+    @include case-study-customisation("", #2B84B4, get-color(grey, 4x-light));
+  }
+}
+
+.case-study--koshland-b-full {
+  @include case-study-customisation("", #2B84B4, get-color(orange, 2x-light));
+}
+
+
+.case-study--philosophie-full {
+  @include case-study-customisation("", #649dcf, get-color(white));
+}
+
+
+.case-study--sole-bikes-full {
+   @include case-study-customisation("", #5f987b, get-color(white));
+}
+
+
+.case-study--willie-full {
+   @include case-study-customisation("/img/m2dm/us/case-study/full/willie", #392C25, get-color(white));
+}
+
+
+// Half or Small Case Study
+.case-study--ace-half {
+  @include case-study-customisation("", #54494a, get-color(white));
+}
+
+
+// Loading full size image for half size case study
+// ticket UDT-1437 open for resized image
+// will replace when given the assets
+// on us/small_business_loans/ page
+.case-study--philosophie-half {
+  @include case-study-customisation("", #04111e, get-color(white));
+}
+
+
+.case-study--viola-half {
+  @include case-study-customisation("", #f2e065, get-color(white));
+}

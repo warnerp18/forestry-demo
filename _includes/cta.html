@@ -1,7 +1,7 @@
-{% if page.use_cta_combo %}
+{% if include.is-cta-combo-field %}
 <section class="cta-combo">
-  <a class="cta-primary cta-combo__primary" href="{{page.cta_combo_fields.primary_cta_link}}">{{page.cta_combo_fields.primary_cta_label}}</a>
-  <span class="cta-combo__secondary-wrap">or<a class="cta-link cta-combo__secondary" href="{{page.cta_combo_fields.secondary_cta_link}}">{{page.cta_combo_fields.secondary_cta_label}}</a>
+  <a class="cta-primary cta-combo__primary" href="{{include.cta-primary-link}}">{{include.cta-primary-label}}</a>
+  <span class="cta-combo__secondary-wrap">or<a class="cta-link cta-combo__secondary" href="{{include.cta-secondary-link}}">{{include.cta-secondary-label}}</a>
   </span>
 </section>
 

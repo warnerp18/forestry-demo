@@ -1,10 +1,9 @@
 .hero {
   $variations: 'ace', 'ace-b', 'aztec', 'besame', 'bob', 'dave', 'electric', 'forth', 'koshland', 'larry', 'night', 'philosophie', 'red-sweater', 'viola', 'winter-lake';
-    background: green;
   @each $variation in $variations {
     &--#{$variation} {
-      background: red;
-      @include hero-customisation('/img/hero/#{$variation}');
+      @include hero-customisation('/img/hero-#{$variation}-');
+      // @include hero-customisation('/img/hero/#{$variation}');
     }
   }
 }

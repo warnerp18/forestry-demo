@@ -1,26 +1,51 @@
-{% assign heading-bar-class = 'text-block__heading-bar--primary section-heading section-heading--large' %}
-{% if page.hero_type == 'brand_hero'%}
+{% assign hero = page.hero_section[0] %}
+{% assign heading-bar-class = '' %}
+
+{% if hero.hero_type == 'Brand' %}
   {% assign heading-bar-class= 'brand-heading brand-heading--hero text-block__heading-bar--brand' %}
+{% elsif  hero.hero_type == 'Functional' %}
+  {% assign heading-bar-class= 'text-block__heading-bar--primary section-heading section-heading--large' %}
+{% elsif  hero.hero_type == 'Editorial' %}
+  {% assign heading-bar-class= 'section-heading section-heading--large' %}
 {% endif %}
 
+{%- capture ctaPrimaryLink -%}
+{{hero.hero_cta[0].cta_combo_fields.primary_cta_link}}
+{%- endcapture -%}
 
-<section class="hero hero--ace {% if page.add_sidekick_ %}hero--with-sidekick{% endif %}">
+{%- capture ctaPrimaryLabel -%}
+{{hero.hero_cta[0].cta_combo_fields.primary_cta_label}}
+{%- endcapture -%}
+
+{%- capture ctaSecondaryLabel -%}
+{{hero.hero_cta[0].cta_combo_fields.secondary_cta_label}}
+{%- endcapture -%}
+
+{%- capture ctaSecondaryLink -%}
+{{hero.hero_cta[0].cta_combo_fields.secondary_cta_link}}
+{%- endcapture -%}
+
+{%- capture isCtaComboField -%}
+{{hero.hero_cta[0].use_cta_combo}}
+{%- endcapture -%}
+
+<section class="hero hero--{{hero.hero_select_image_name}} {% if hero.add_sidekick_ %}hero--with-sidekick{% endif %}">
   <div class="hero__inner">
     <div class="hero__content u-color-white">
-      <section class="text-block text-block--large u-mb-small">
-        <h1 class="{{heading-bar-class}} u-color-white">{{page.hero_section_heading[0].section_heading | remove: """" }}</h1>
-        <p class="text-block__lead-paragraph">{{page.hero_lead_paragraph[0].lead_paragraph}}</p>
-      </section>
-      {% include cta.html %}
+      <div class="text-block text-block--large u-mb-small">
+        <h1 class="{{heading-bar-class}} u-color-white">{{hero.hero_section_heading[0].section_heading | remove: """" }}</h1>
+        <p class="text-block__lead-paragraph">{{hero.hero_lead_paragraph[0].lead_paragraph}}</p>
+      </div>
+      {% include cta.html is-cta-combo-field=isCtaComboField cta-primary-link=ctaPrimaryLink cta-primary-label=ctaPrimaryLabel cta-secondary-link=ctaSecondaryLink cta-secondary-label=ctaSecondaryLabel %}
     </div>
   </div>
 </section>
 
-{% if page.add_sidekick_ %}
+{% if hero.add_sidekick_ %}
 <section class="hero-sidekick hero-sidekick--no-overlap">
   <div class="hero-sidekick__content">
     <ul class="hero-sidekick__column-primary hero-sidekick__content-grid feature-list u-color-white">
-      {% for list_item in page.list_item %}
+      {% for list_item in hero.list_item %}
         <li class="feature-list__item">{{ list_item }}</li>
       {% endfor %}
     </ul>

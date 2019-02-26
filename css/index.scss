@@ -50,5 +50,5 @@ $font-family-secondary: get-config(font-family-default);
 @include radius-component-video-block;
 @include radius-component-quote;
 
-
-@import "hero"
+@import "hero";
+@import "case-study";
