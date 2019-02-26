@@ -38,3 +38,14 @@ This layout is used by the documents in the _posts/ collection
 
 {% include case-study.html %}
 
+{% assign trustBlock = page.trust_block[0] %}
+{%- capture trustBlockTheme -%}
+{{trustBlock.trust_block_background_theme[0].theme_options}}
+{%- endcapture -%}
+
+{%- capture trustBlockLogo -%}
+{{trustBlock.full_width_trust_block.full_width_trustblock_logo}}
+{%- endcapture -%}
+
+{{ trustBlock | inspect }}
+{% include trust-block.html theme=trustBlockTheme logoFullWidth=trustBlockLogo %}

@@ -13,13 +13,15 @@
 {{case-study-quote.quote_author}}
 {%- endcapture -%}
 
-{{ case-study | inspect }}
+{%- capture textColor -%}
+{{case-study-quote.quote_and_author_text_color}}
+{%- endcapture -%}
 
 <div class="case-study case-study--{{case-study.case_study_sizing}} case-study--{{case-study.vertical_alignment}} case-study--{{case-study.horizontal_alignment}} case-study--{{case-study.case_study_image_options}}{% if case-study.case_study_sizing == "large"%}-full{% else %}-half{% endif %}">
   <div class="case-study__image"></div>
   <div class="case-study__inner">
     <div class="case-study__content">
-      {% include quote.html quote-modifier=quoteModifier quote-content=quoteContent quote-author=quoteAuthor %}
+      {% include quote.html quote-modifier=quoteModifier quote-content=quoteContent quote-author=quoteAuthor text-color=textColor %}
     </div>
   </div>
 </div>
