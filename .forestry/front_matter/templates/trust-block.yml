@@ -1,0 +1,45 @@
+---
+label: Trust Block
+hide_body: false
+is_partial: true
+fields:
+- type: blocks
+  name: trust_block_background_theme
+  label: Trust Block Background Theme
+  template_types:
+  - background-theme
+- type: field_group
+  name: full_width_trust_block
+  label: Full Width Trust Block
+  description: See http://radius.fundingcircle.tech/M2DM/components/trust/trust-block/
+  fields:
+  - type: file
+    label: Full Width Trustblock Logo
+    name: full_width_trustblock_logo
+  - type: text
+    name: full_width_trust_block_content
+    label: Full Width Trust Block Content
+- type: field_group
+  name: 1_1_grid_user_case
+  label: 1:1 Grid User Case
+  description: http://radius.fundingcircle.tech/M2DM/components/trust/trust-block/
+  fields:
+  - type: textarea
+    label: Trust Block Text Content
+    name: trust_block_text_content
+    config:
+      wysiwyg: false
+      schema:
+        format: markdown
+  - type: file
+    name: trust_block_media_element
+    label: Trust Block Media Element
+  - type: blocks
+    name: trust_block_
+    label: Trust Block Right Side Component
+    template_types:
+    - feature-list
+    - cta
+    - text-block
+    - lead-paragrpah
+    - screamer-stat-label
